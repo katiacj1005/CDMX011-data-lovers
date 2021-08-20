@@ -3,7 +3,6 @@ import data from './data/rickandmorty/rickandmorty.js';
 const miDOM = document.getElementById('root');
 const characters = data.results; 
 const selectorEspecie = document.getElementById('selectorEspecie');
-const selectorLocation = document.getElementById('selectorLocation');
 
 selectorEspecie.addEventListener('change', function (event) {
     console.log(event.target.value)
@@ -30,25 +29,23 @@ function render(characters) {
     miDOM.innerHTML = html; 
 }
 
-selectorLocation.addEventListener('change', function (event) {
-    console.log(event.target.value)
-    const value = event.target.value
-     const caracteresFiltrados = characters.filter(function (character) {
-      if (character.location == value) {
-        return true
-               } else {
-           return false
-           }
-         })
-     const caracteresFiltrados = characters.filter((character) => character.location == value)
+    // const caracteresFiltrados = characters.filter(function (character) {
+    //     if (character.species == value) {
+    //         return true
+    //     } else {
+    //         return false
+    //     }
+    // })
 
+    // const caracteresFiltrados = characters.filter((character) => character.species == value)
 
+    //Aquí llamo a mis tarjetas 
 function createCard(character) {
     let html = `
     <div id="tarjeta">
         <p> ${character.name} </p>
-        <img src="${character.image}" height="150px" width="100px" />
-        <p>${character.species}</p>
+        <img src="${character.image}" class="imagen_tarjeta" />
+        <p id="texto">${character.species}</p>
         <p>${character.status}</p>
     </div>
     `
