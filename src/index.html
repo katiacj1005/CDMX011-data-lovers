@@ -7,14 +7,10 @@
   </head>
    <body>
 
-     <div class="contenedordata">
-       <div id="recover" class="imptarjeta"></div>
-     </div>
-
-     <div class="header">
+     <header>
      <h1>Rick and Morty</h1>
      <h2>Bienvenidos</h2>
-    </div>
+     </header>
 
 <div id="myfilterab" class="topnav"> 
     <input type="text" placeholder="Search.." id="mydropdown" onkeyup="filterFunction()" >
@@ -34,14 +30,29 @@
     <option value="Parasite">Parasite</option>
    </select>
 
-   <select class="btn Explorar" id="selectorLocation">
+   <select class="btn Explorar" id="selectorGender">
     <option value="Male">Male</option>
     <option value="Female">Female</option>
-    <option value="unknown">unknown</option>
+    <option value="Unknown">Unknown</option>
     <option value="Genderless">Genderless</option>
    </select>
+
+   <select class="btn Ordenar" id="selectorOrdenado">
+    <option value="az"> ordenar de A a la Z</option>
+    <option value="za"> ordenar de Z a la A</option>
+  </select>
+
 </div>
- 
+
+<!-- 
+<div>
+  <select class="btn Ordenar" id="Ordenar">
+    <option value="az"> ordenar de A a la Z</option>
+    <option value="za"> ordenar de Z a la A</option>
+  </select>
+</div>
+-->
+
     <div id="root"></div>
     
     <script src="main.js" type="module"></script>
