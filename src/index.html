@@ -5,20 +5,56 @@
     <title>Data Lovers Rick and Morty</title>
  <link rel="stylesheet" href="style.css" />
   </head>
+   <body>
 
-  <body>
-    <div id="root">
-      <h1>Rick and Morty</h1>
-    </div>
-    <p>Bienvenidos</p>
-    <h1> Rick and Morty</h1>
+     <header>
+     <h1>Rick and Morty</h1>
+     <h2>Bienvenidos</h2>
+     </header>
+
+<div id="myfilterab" class="topnav"> 
+    <input type="text" placeholder="Search.." id="mydropdown" onkeyup="filterFunction()" >
     
+   <select class="btn Explorar" id="selectorEspecie">
+    <option value="Mytholog">Mytholog</option>
+    <option value="Humanoid">Humanoid</option>
+    <option value="Human">Human</option>
+    <option value="Alien">Alien</option>
+    <option value="Unknown">Unknown</option>
+    <option value="Poopybutthole">Poopybutthole</option>
+    <option value="Animal">Animal</option>
+    <option value="Vampire">Vampire</option>
+    <option value="Robot">Robot</option>
+    <option value="Cronenberg">Cronenberg</option>
+    <option value="Disease">Disease</option>
+    <option value="Parasite">Parasite</option>
+   </select>
 
+   <select class="btn Explorar" id="selectorGender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Unknown">Unknown</option>
+    <option value="Genderless">Genderless</option>
+   </select>
 
-  
+   <select class="btn Ordenar" id="selectorOrdenado">
+    <option value="az"> ordenar de A a la Z</option>
+    <option value="za"> ordenar de Z a la A</option>
+  </select>
 
+</div>
+
+<!-- 
+<div>
+  <select class="btn Ordenar" id="Ordenar">
+    <option value="az"> ordenar de A a la Z</option>
+    <option value="za"> ordenar de Z a la A</option>
+  </select>
+</div>
+-->
 
     <div id="root"></div>
+    
     <script src="main.js" type="module"></script>
   </body>
 </html>

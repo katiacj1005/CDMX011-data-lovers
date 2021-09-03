@@ -1,12 +1,12 @@
-export default {
+export default { //esto es un objeto
   "info": {
       "count": 493,
       "pages": 25,
       "next": "https://rickandmortyapi.com/api/character/?page=2",
       "prev": ""
   },
-  "results": [
-      {
+  "results": [ //esto es una propiedad del objeto
+      { //esto es un arreglo de objetos
           "id": 1,
           "name": "Rick Sanchez",
           "status": "Alive",
